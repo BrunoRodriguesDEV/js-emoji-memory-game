@@ -1,9 +1,16 @@
-body {
-  display: flex;
+
+.main {
+  display: block;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #fc1e8a;
+  background: linear-gradient(
+    325deg,
+    #03001e 0%,
+    #7303c0 30%,
+    #ec38bc 70%,
+    #fdeff9 100%
+  );
   user-select: none;
 }
 
@@ -14,13 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  background: linear-gradient(
-    325deg,
-    #03001e 0%,
-    #7303c0 30%,
-    #ec38bc 70%,
-    #fdeff9 100%
-  );
+
   padding: 40px 60px;
 }
 
@@ -91,4 +92,48 @@ h2 {
 .boxOpen::after,
 .boxMatch::after {
   transform: rotateY(180deg);
+}
+
+.tempo{
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+.header{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: #03001e;
+  color: #ffffff;
+ 
+  
+}
+
+
+#gameOver{
+  margin: 0 auto;
+  display: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #b9aaaa;
+  color: #ff0000;
+  height: 600px;
+  width: 900px;
+  padding-top:40px;
+  font-size: 30px;
+  border-radius: 8px
+
+}
+button{
+  background-color: #f82804;
+  color: #fff5f5;
+  margin-top: 20px;
+  width: 300px;
+  height: 100px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #380901;
 }

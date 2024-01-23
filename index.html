@@ -9,12 +9,45 @@
   <link rel="stylesheet" href="./src/styles/main.css">
 </head>
 
-<body>
-  <div class="container">
-    <h2>JOGO DA MEMÓRIA</h2>
-    <div class="game"></div>
-    <button class="reset" onclick="window.location.reload()">RESET GAME</button>
+<body onload="iniciarContagemRegressiva()" >
+
+ <header class="header">
+  <div class="tempo"> 
+    
+    <h1 class="tempo">Tempo</h1>
+    <h1 id="cronometro">02:00</h1>
+
   </div>
+  <div>
+    
+    <h1>Tentativas</h1>
+  <h1 id="tentativas">50</h1>
+  
+  </div>
+  
+ </header>
+
+  
+    
+  
+
+   <div class="main" id="teste">
+    <div class="container">
+      <h2>JOGO DA MEMÓRIA</h2>
+      
+      <div class="game"></div>
+      
+      <div class="mensagem"></div>
+      
+      
+    </div>
+   </div>
+   <div id="gameOver">
+    <p id="mensagem"></p>
+    
+    <button onclick="reiniciarJogo()">SAiR</button>
+    
+  </div> 
 
   <script src="./src/scripts/engine.js" defer></script>
 </body>
